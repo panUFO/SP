@@ -1,6 +1,6 @@
 ## zadania z środowiska programisty
 
-ufo
+tekst wpisujemy w notacji  [Markdown] [podstawy markdown ].
 
 aby zmienić haslo należy na terminalu wpisać:
 
@@ -13,3 +13,5 @@ main ()
 {
 printf ("hello world");
 }
+
+[podstawy markdown ]: http://daringfireball.net/projects/markdown/basics 
