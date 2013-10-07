@@ -1,4 +1,2 @@
-SP1
-===
-
-zadania z środowiska programisty
+## zadania z środowiska programisty
+ufo
