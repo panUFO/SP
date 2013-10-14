@@ -15,3 +15,6 @@ printf ("hello world");
 }
 
 [podstawy markdown ]: http://daringfireball.net/projects/markdown/basics 
+
+obczaić książkę
+http://helion.pl/ksiazki/c-rusz-glowa-david-griffiths-dawn-griffiths,cruszg.htm
