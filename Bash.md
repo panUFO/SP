@@ -45,3 +45,39 @@ cat > wykonano.txt
 "
 ctrl+c
 
+```
+7\. Będąc w katalogu logo skopiuj powyżej otrzymane 3 pliki do katalogu dokumenty.
+```
+cd nauka
+cd logo
+
+```
+8\. Będąc w katalogu dokumenty połącz skopiowane 3 pliki w plik odtworzono.txt, tak aby otrzymać plik 
+o zawartości identycznej z wykonano.txt. Następnie plik odtworzono.txt skopiuj do katalogu wazne-sprawy.
+
+```
+cd praca
+cd dokumenty
+cat x* >> odtworzono.txt
+cp odtworzono.txt ../../dom/wazne-sprawy
+```
+
+9\. Będąc w katalogu wazne-sprawy sprawdź, czy są jakieś różnice w zawartości plików wykonano.txt i odtworzono.txt.
+
+```
+diff odtworzono.txt ../../praca/zlecenia/zrealizowane/wykonano.txt
+```
+
+10\. Wyświetl kalendarz na październik 2009 r. (cal)
+
+```
+cal 10 2009
+cal 10 2009 -3
+```
+
+11\. Jaki był dzień tygodnia 25 maja 1975 r. (cal i date)
+
+```
+date -d 1975-05-25 +%A
+```
+
