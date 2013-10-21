@@ -44,12 +44,14 @@ cat > wykonano.txt
 "1234567890
 "
 ctrl+c
+split --bytes=5 wykonano.txt
 
 ```
 7\. Będąc w katalogu logo skopiuj powyżej otrzymane 3 pliki do katalogu dokumenty.
 ```
 cd nauka
 cd logo
+cp ../../praca/zlecenia/zrealizowane/xaa xab xac ../../praca/dokumenty
 
 ```
 8\. Będąc w katalogu dokumenty połącz skopiowane 3 pliki w plik odtworzono.txt, tak aby otrzymać plik 
