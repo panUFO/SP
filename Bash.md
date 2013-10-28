@@ -133,10 +133,24 @@ mv temp/praca/wazne-sprawy/ temp/dom/
 ```
 10\. Wyswietl okreslone linijki liczac od gory
 ```sh
-head -8 *sprawdzian.c* | tail -2 #head-liczenie od której linijki, tail ilość linijek od tyłu
+head -8 sprawdzian.c | tail -2 #head-liczenie od której linijki, tail ilość linijek od tyłu
 ```
 
 11\. Wyswietl linijki liczac od dolu (5,6)
 ```sh
-tail -7 *sprawdzian.c* | head -2 
+tail -7 sprawdzian.c | head -2 
 ```
+
+12\.Wyświetl linijki ze środka pliku program.c (licząc od dołu) przy użyciu komendy tac. Przykład linijki 5 i 6.
+```sh
+tac sprawdzian.c | head -8 | tail -2 | tac
+```
+
+13\.wyszukiwanie wyrazów konczacych sie "..."
+```sh
+grep 'main\>' sprawdzian.c
+```
+wyszukiwarka google 10 challenges
+https://docs.google.com/file/d/0BxlpTzK9iG-2a3VvZi1nZWl0eEE/edit?usp=sharing&hl=pl&forcehl=1&pli=1
+
+
