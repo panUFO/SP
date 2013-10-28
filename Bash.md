@@ -130,3 +130,8 @@ tar -xf temp.tar
 ```sh
 rm temp.tar
 mv temp/praca/wazne-sprawy/ temp/dom/
+```
+10\. Wyswietl okreslone linijki
+```sh
+head -8 sprawdzian.c | tail -2 #head-liczenie od której linijki, tail ilość linijek od tyłu
+```
