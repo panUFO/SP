@@ -32,6 +32,12 @@ tail -n 7 /etc/passwd | head -n 3
 cat /etc/passwd |tr "\n" " "
 ```
 
+```sh
+x=$(cat plik.txt)
+echo $x
+echo $x | wc
+```
+
 7\. Za pomocą filtru tr wykonaj modyfikację pliku plik.txt, polegającą na umieszczeniu każdego słowa w osobnej linii.
 ```sh
 cat plik.txt | tr " \t" "\n"
