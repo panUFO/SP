@@ -43,6 +43,10 @@ echo $x | wc
 cat plik.txt | tr " \t" "\n"
 
 ```
+7a. Wiele spacji/tabulatur jedną spacją
+```sh
+
+```
 
 8\. Zlicz wszystkie pliki znajdujące się w katalogu /etc i jego podkatalogach.
 ```sh
