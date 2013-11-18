@@ -29,10 +29,10 @@ cat passwd | sort -r -t : -k 4 -k 3
 
 6\. Podaj liczbę plików każdego użytkownika.
 ```sh
-
+find / -printf '%u\n' 2>/dev/null | sort | uniq -c
 ```
 
 7\. Sporządź statystykę praw dostępu (dla każdego z praw dostępu podaj ile razy zostało ono przydzielone).
 ```sh
-
+find -printf "%m\n" | sort | uniq -c
 ```
