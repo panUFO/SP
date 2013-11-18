@@ -5,14 +5,25 @@
 ls | tr [:lower:] [:upper:]
 ```
 
+```sh
+ls -1F | sed -e '/[/]/d' | tr 'a-z' 'A-Z'
+```
+
 2\. Wyświetl listę praw dostępu do plików w aktualnym katalogu, ich rozmiar i nazwę.
 ```sh
 ls -l
 ```
 
+```sh
+ls -hgoF | tr -s " " | cut -f 1,3,7 -d " " | tr " " "\t" | sed -e '/[/]/d'
+```
+
 3\. Wyświetl listę plików w aktualnym katalogu, posortowaną według rozmiaru pliku.
 ```sh
 ls -l -S
+```
+```sh
+ls -h1lS | sed -e '/^d/d' | tr -s " " | cut -f 5,9 -d " " | tac
 ```
 
 4\. Wyświetl zawartość pliku */etc/passwd* posortowaną według numerów UID w kolejności od największego do najmniejszego.
