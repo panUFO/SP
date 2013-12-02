@@ -2,7 +2,7 @@ Laboratorium 6
 --
 1a/. W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
 ```
-grep . *plik.txt*
+grep . */plik.txt/*
 ```
 1b/. W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak który widać.
 ```
