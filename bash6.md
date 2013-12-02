@@ -1,9 +1,14 @@
 Laboratorium 6
 --
-1/. W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
+1a/. W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
 ```
-grep . plik.txt
+grep . *plik.txt*
 ```
+1b/. W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak który widać.
+```
+grep [[:space:][:cntrl:]] plik.txt
+```
+
 2/. Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
 ```
 grep ^[0-9] pl*
