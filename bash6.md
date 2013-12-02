@@ -2,7 +2,7 @@ Laboratorium 6
 --
 1/. W pliku plik.txt znajdź wiersze zawierające co najmniej jeden znak.
 ```
-grep -n . plik.txt
+grep . plik.txt
 ```
 2/. Znajdź w plikach pl* wiersze rozpoczynające się od cyfry.
 ```
