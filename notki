@@ -3,3 +3,5 @@ http://wbzyl.inf.ug.edu.pl/rails2/jp
 
 skrypty:
 polecenie  getopt
+            lynx
+            curl
