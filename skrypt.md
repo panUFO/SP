@@ -1,6 +1,6 @@
 ###SKRYPT
 ```sh
-!/usr/bin/perl -w
+#!/usr/bin/perl -w
 system "clear";
 print "PROGRAM GENERUJĄCY HASŁA \n";
 print "Podaj długość hasła ";
