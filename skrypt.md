@@ -1,10 +1,11 @@
 ###SKRYPT
-Aby skrypt działał, należy zainstalować pakiet pwgen poprzez polecenie
+1\.Aby skrypt działał, należy zainstalować pakiet pwgen poprzez polecenie
 
 ```sh
 sudo apt-get install pwgen
 ```
-#
+2\.Wykonywujemy skrypt
+
 ```sh
 #!/usr/bin/perl -w
 system "clear";
