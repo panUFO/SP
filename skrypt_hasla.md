@@ -1,10 +1,3 @@
-###SKRYPT
-1\.Aby skrypt działał, należy zainstalować program pwgen poprzez polecenie
-
-```sh
-sudo apt-get install pwgen
-```
-2\.Wykonywujemy skrypt
 
 ```sh
 #!/bin/bash
