@@ -1,11 +1,7 @@
-
 ```sh
 #!/bin/bash
 
 clear
-
-
-#if `! dpkg -l | grep -q pwgena` #test
 
 
 if `! dpkg -l | grep -q pwgen`
