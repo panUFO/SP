@@ -7,28 +7,74 @@ sudo apt-get install pwgen
 2\.Wykonywujemy skrypt
 
 ```sh
-#!/usr/bin/perl -w
-system "clear";
-print "PROGRAM GENERUJĄCY HASŁA \n";
-print "Podaj długość hasła ";
-$dlugosc = <STDIN>;
-if ($dlugosc lt "1")
-{ print "NIE WPROWADZONO ZADNEJ DLUGOSCI, KONIEC PROGRAMU\n";
-exit}
+#!/bin/bash
 
-print "ILE HASEŁ WYGENEROWAĆ? ";
-$powt =<STDIN>;
-if ($powt lt "1")
-{ print "BRAK ILOŚCI, KONIEC PROGRAMU\n";
-exit}
-print "NO TO GENERUJEMY! <3\n";
-$ile = $powt;
-for (1 ..$powt)
-{
-{ @lines = `pwgen -s -y $dlugosc`;print "hasło:     ";}
-foreach (@lines) #-y, (znaki specjalne) -s (bezpieczne, trudne do zapamietania)
+clear
 
-{print;}
-}
 
+#if `! dpkg -l | grep -q pwgena` #test
+
+
+if `! dpkg -l | grep -q pwgen`
+then
+	while [ 1 ]
+	do
+		read -p "Nie znaleziono programu pwgen. Czy chcesz go zainstalować? T/N$" xx
+
+		if [ "$xx" = "t" ] || [ "$xx" = "T" ]
+		then
+			apt-get install pwgen
+			break
+		elif [ "$xx" = "n" ] || [ "$xx" = "N" ]
+		then
+			exit
+		else
+			xx=""
+		fi
+	done
+fi
+
+
+clear
+
+
+echo "PROGRAM GENERUJĄCY HASŁA"
+
+x="0"
+while [ 1 ]
+do
+	read -p "Podaj długość hasła: " x
+	if [ $x ]
+	then
+		if [ $x -gt 0 ]
+		then
+			break
+		else
+			echo "Musisz podać długość hasła!"
+		fi
+	else
+		echo "Musisz podać długość hasła!"
+	fi
+done
+
+y="0"
+while [ 1 ]
+do
+	read -p "Podaj ilość haseł: " y
+	if [ $y ]
+	then
+		if [ $y -gt 0 ]
+		then
+			break
+		else
+			echo "Musisz podać ilość haseł!"
+		fi
+	else
+		echo "Musisz podać ilość haseł!"
+	fi
+done
+
+echo "Generowanie..."
+
+pwgen -s -y $x -N $y -1
 ```
